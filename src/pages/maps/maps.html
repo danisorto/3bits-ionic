@@ -1,0 +1,21 @@
+<!--
+  Generated template for the MapsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Maps</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <div #map id="map" style="height:100%"></div>
+  <img *ngIf="mapNotInit" src="assets/customMarker.png">
+  <!-- <canvas #myCanvas width="100" height="100" id="canvas"></canvas> -->
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>ListView</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-list-header>Today</ion-list-header>
+        <ion-item *ngFor="let item of list">
+            <ion-avatar item-start>
+                <img src="{{item.image}}">
+            </ion-avatar>
+            <div (click)="itemSelected(item)">
+                <h2>{{item.name}}</h2>
+                <p>{{item.text}}</p>
+                <ion-note item-end>{{item.time}}</ion-note>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>

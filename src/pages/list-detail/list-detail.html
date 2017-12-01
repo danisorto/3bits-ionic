@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Description
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="{{character.image}}">
+        </ion-avatar>
+        <h2>{{character.name}}</h2>
+        <p>{{character.text}}</p>
+      </ion-item>
+  </ion-list>
+  <button ion-button block (click)="showInMap()">
+    <ion-img style="background-color: transparent;" src="assets/customMarker.png"></ion-img>
+    Ver en el mapa
+  </button>
+</ion-content>
